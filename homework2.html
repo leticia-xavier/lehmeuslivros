@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="img/notebook.png" type="imagem/png">
+<link rel="stylesheet" type="text/css" href="css/homework2.css">
+<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+<meta charset="utf-8">
+	<title>Meus livros</title>
+</head>
+<body>
+<audio src="media/musica.mp3" controls loop></audio>
+<header>
+<nav>
+	<ul>
+		<li><a id="inicio">Início</a</li>
+		<li><a id="livros">Livros favoritos</a></li>
+		<li><a id="resenhas">Resenhas</a></li>
+		<li><a id="video">Livros indicados</a></li>
+	</ul>
+</nav>
+</header>
+<section id="inicio2">
+	<img class="arvore" src="img/arvore.jpg" alt="imagem">
+</section>
+<article id="livros2">
+	<h2>Livros favoritos</h2>
+	<img class="livro" src="img/cidades.jpg" alt="livros">
+	<img class="livro" src="img/porta.jpg" alt="livros">
+	<img class="livro" src="img/love.jpg" alt="livros">
+</article>
+<article>
+<h2 id="resenhas2">Resenhas</h2>
+</article>
+<h3>Cidades de papel</h3>
+<p>Quentin Jacobsen tem uma paixão platônica pela magnífica vizinha e colega de escola Margo Roth Spiegelman. Até que em um cinco de maio que poderia ter sido outro dia qualquer, ela invade sua vida pela janela de seu quarto, com a cara pintada e vestida de ninja, convocando-o a fazer parte de um engenhoso plano de vingança. E ele, é claro, aceita. 
+Assim que a noite de aventuras acaba e um novo dia se inicia, Q vai para a escola e então descobre que o paradeiro da sempre enigmática Margo é agora um mistério. No entanto, ele logo encontra pistas e começa a segui-las. Impelido em direção a um caminho tortuoso, quanto mais Q se aproxima de Margo, mais se distancia da imagem da garota que ele achava que conhecia.</p>
+<h3>Na porta ao lado</h3>
+<p>'Na porta ao lado', retoma as personagens de Meus 15 anos - as amigas Bia, Carol, Amanda, Pri e Roberta - e gira em torno das aventuras e desventuras de Carol, que começa o novo ano na escola tendo que encarar não só o casamento de sua mãe e uma mudança de casa, mas também o padrasto como professor e o filho dele como colega de turma. Parece muito azar para uma garota só! Mas muitas outras surpresas aguardam a protagonista, suas amigas e os leitores ao longo dessa história feita de descobertas, amores, sonhos, desilusões, alegrias, decepções e amadurecimento, como a vida de todo adolescente.</p>
+<h3>Socrates in love</h3>
+<p>Lançado pela Editora JBC, é a versão em mangá do maior best-seller do Japão. Baseado no romance Sekai no Chuushin de Ai wo Sakebu, de Kyoichi Katayama, desenhista Kazumi Kazui o trágico primeiro amor de um casal de adolescentes. O romance nasceu quando escritor japonês Kyoichi Katayama, ao ler um livro de filosofia, deparou-se com a frase:o amor é uma forma de violência qie obriga as pessoas pensarem. Intrigado, ele decidiu criar uma história que simbolizasse a idéia. O livro mais vendido do Japão quanto nos Estados Unidos. O enredo é tão forte e cativante que emocionou até a desenhista Kazumi Kazui que, a parti da metade da história, criou todos os desenhos com olhos cheios de lágrimas. Agora chega a vez dos brasileiros se emocionaren com o novo mangá da Editora JBC.</p>
+<section>
+<h2 id="video2">Livros indicados</h2>
+	<video src="media/indicados.mp4" controls controls poster="img/paola.jpg"></video>
+</section>
+<footer>
+	<em>©Todos os direitos reservados | 2017</em>
+		<a href="https://pt-br.facebook.com/" target="_blank">
+			<img src="img/facebook.png" class="social">
+		</a>
+		<a href="https://www.youtube.com/" target="_blank">
+			<img src="img/youtube.png" class="social">
+		</a>
+		<a href="https://twitter.com/?lang=pt-br" target="_blank">
+			<img src="img/twitter.png" class="social">
+		</a>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+		$("#inicio").click(function(){
+			$("html,body").animate(
+					{scrollTop:$("#inicio2").offset().top}, 800
+				); return false;
+		});//fecha inicio
+
+		$("#livros").click(function(){
+			$("html,body").animate(
+					{scrollTop:$("#livros2").offset().top}, 800
+				); return false;
+		});//fecha livros
+
+		$("#resenhas").click(function(){
+			$("html,body").animate(
+					{scrollTop:$("#resenhas2").offset().top}, 800
+				); return false;
+		});//fecha resenha
+
+		$("#video").click(function(){
+			$("html,body").animate(
+					{scrollTop:$("#video2").offset().top}, 800
+				); return false;
+		});//fecha video
+
+</script>
+</body>
+</html>
